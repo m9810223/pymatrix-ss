@@ -25,15 +25,15 @@ class _Window:
         curses.echo()
         curses.nocbreak()
         curses.endwin()
-        logger.debug('deinit')
+        # logger.debug('deinit')
 
     def __enter__(self):
-        logger.debug('__enter__')
+        # logger.debug('__enter__')
         return self.init()
 
     def __exit__(self, exc_type, exc_value, traceback):
         self.deinit()
-        logger.debug('__exit__')
+        # logger.debug('__exit__')
 
 
 class Window(_Window):

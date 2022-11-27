@@ -38,7 +38,7 @@ logging.config.dictConfig(
         'loggers': {
             '': {
                 'handlers': [
-                    'default',
+                    # 'default',
                     'handler-rotate',
                 ],
                 'level': 'DEBUG',
